@@ -559,7 +559,7 @@ a.btn:active {
   }
 }
 
-/* Teams */
+/* Projects*/
 .team {
   color: #fff;
   background-color: #111;
@@ -606,6 +606,14 @@ a.btn:active {
   border-color: #fff;
 }
 
+/* Project Header */
+.header-project {
+  position: relative;
+  width: 100%;
+  min-height: 5vh;
+  background: #000;
+  z-index: 1;
+}
 /* Contact */
 .contact-center {
   display: grid;
@@ -701,3 +709,4 @@ footer p {
 footer p span {
   color: #dd9a05;
 }
+
