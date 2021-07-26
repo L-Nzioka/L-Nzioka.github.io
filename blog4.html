@@ -23,7 +23,7 @@
     <!-- Custom StyleSheet -->
     <link rel="stylesheet" href="styles.css" />
 
-    <title>Project 1</title>
+    <title>OSI Model</title>
 
     
 </head>
@@ -34,7 +34,7 @@
         <nav class="nav">
           <div class="navigation container">
             <div class="logo">
-              <h1>Project 1<span>.</span></h1>
+              <h1>Blog 4<span>.</span></h1>
             </div>
   
             <div class="menu">
@@ -49,13 +49,13 @@
   
               <ul class="nav-list">
                 <li class="nav-item">
-                  <a href="index.html" class="nav-link scroll-link">Home</a>
+                  <a href="index.html" class="nav-link ">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a href="index.html" class="nav-link scroll-link">About</a>
+                  <a href="index.html" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                  <a href="index.html" class="nav-link scroll-link">Skills</a>
+                  <a href="index.html" class="nav-link ">Skills</a>
                 </li>
                 <li class="nav-item">
                   <a href="index.html" class="nav-link ">Projects</a>
@@ -64,7 +64,7 @@
                     <a href="index.html" class="nav-link ">Blog</a>
                   </li>
                 <li class="nav-item">
-                  <a href="index.html" class="nav-link scroll-link">Contact</a>
+                  <a href="index.html" class="nav-link ">Contact</a>
                 </li>
               </ul>
             </div>
@@ -81,23 +81,112 @@
     <!-- Project Description-->
     <section class="section Portfolio" id="Portfolio">
         <div class="title">
-          <h1>Git Vs GitHub</h1>
+          <h1>OSI Model</h1>
         </div>
   
         <div class="Portfolio-center container">
           <div class="left" data-aos="fade-right" data-aos-duration="2000">
-            <img src="./images/profile1.jpg" alt="" />
+        
           </div>
 
           <div class="right" data-aos="fade-left" data-aos-duration="2000">
-            <h1>I'm Lyn Nzioka ,<span id="type2"></span></h1>
+
+            <h1>OSI Model Explained</h1>
+            <hr>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              placeat inventore rerum tempore cupiditate, amet adipisci aut eius
-              facilis quisquam magni ratione maxime officiis earum blanditiis
-              magnam illum obcaecati vero? Odit ipsa facilis officiis fuga
-              voluptate similique sunt exercitationem voluptatibus, illo et fugit
-              eveniet provident quo atque, nesciunt explicabo tenetur!
+              The OSI Model can be seen as a universal language for computer networking. 
+              It’s based on the concept of splitting up a communication system into seven abstract layers, each one stacked upon the last.
+              <br>
+
+              <img src="./images/OSI model.png" alt="OSI model illustrated" />
+
+              <h1>Why Does the OSI model matter</h1>
+              <hr>
+              <p>
+              Although the modern Internet doesn’t strictly follow the OSI Model (it more closely follows the simpler Internet protocol suite), the OSI Model is still very useful for troubleshooting network problems. 
+              Whether it’s one person who can’t get their laptop on the Internet, or a web site being down for thousands of users, the OSI Model can help to break down the problem and isolate the source of the trouble. 
+              If the problem can be narrowed down to one specific layer of the model, a lot of unnecessary work can be avoided.<br>
+              </p>
+
+
+              <h1>What are the seven layers of OSI Model?</h1>
+              <hr>
+              <p>
+
+              <h3>The Application Layer</h3>
+              <p>
+                This is the only layer that directly interacts with data from the user. 
+                Software applications like web browsers and email clients rely on the application layer to initiate communications. 
+                But it should be made clear that client software applications are not part of the application layer; rather the application layer is responsible for the protocols and data manipulation that the software relies on to present meaningful data to the user.
+                Application layer protocols include HTTP as well as SMTP (Simple Mail Transfer Protocol is one of the protocols that enables email communications).
+                <center><img src="./images/App.png" alt="" /></center>
+              </p>
+           
+
+
+
+              <h3>The Presentation Layer</h3>
+              <p>
+                This layer is primarily responsible for preparing data so that it can be used by the application layer; in other words, layer 6 makes the data presentable for applications to consume.
+                The presentation layer is responsible for translation, encryption, and compression of data.
+                <br>
+                <center><img src="./images/pres.png" alt="" /></center>
+              </p>
+              
+
+
+
+              <h3>The Session Layer</h3>
+                <p>
+                  This is the layer responsible for opening and closing communication between the two devices. 
+                  The time between when the communication is opened and closed is known as the session.
+                  The session layer ensures that the session stays open long enough to transfer all the data being exchanged, and then promptly closes the session in order to avoid wasting resources.
+                  <center><img src="./images/sess.png" alt="" /></center>
+                </p>
+             
+
+
+
+              <h3>The Transport Layer</h3>
+              <p>
+                Layer 4 is responsible for end-to-end communication between the two devices. 
+                This includes taking data from the session layer and breaking it up into chunks called segments before sending it to layer 3. 
+                The transport layer on the receiving device is responsible for reassembling the segments into data the session layer can consume.
+                <center><img src="./images/trans.png" alt="" /></center>
+              </p>
+              
+
+
+              <h3>The Network Layer</h3>
+              <p>
+                The network layer is responsible for facilitating data transfer between two different networks. 
+                If the two devices communicating are on the same network, then the network layer is unnecessary. 
+                The network layer breaks up segments from the transport layer into smaller units, called packets, on the sender’s device, and reassembling these packets on the receiving device.
+                The network layer also finds the best physical path for the data to reach its destination; this is known as <u>routing.</u>
+              </p>
+              <center><img src="./images/net.png" alt="" /></center>
+
+
+              <h3>The Data Link Layer</h3>
+              <p>
+                The data link layer takes packets from the network layer and breaks them into smaller pieces called frames. 
+                Like the network layer, the data link layer is also responsible for flow control and error control in intra-network communication
+                (The transport layer only does flow control and error control for inter-network communications).
+                <center><img src="./images/data.png" alt="" /></center>
+              </p>
+              
+
+              <h3>The Physical Layer</h3>
+              <p>
+              This layer includes the physical equipment involved in the data transfer, such as the cables and switches. 
+              This is also the layer where the data gets converted into a bit stream, which is a string of 1s and 0s.
+              <center><img src="./images/physical.png" alt="" /></center>
+            </p>
+            </p>
+
+
+        
+
             </p>
           </div>
         </div>

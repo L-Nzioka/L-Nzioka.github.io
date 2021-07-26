@@ -23,7 +23,7 @@
     <!-- Custom StyleSheet -->
     <link rel="stylesheet" href="styles.css" />
 
-    <title>Project 1</title>
+    <title>IoT Protocols</title>
 
     
 </head>
@@ -34,7 +34,7 @@
         <nav class="nav">
           <div class="navigation container">
             <div class="logo">
-              <h1>Project 1<span>.</span></h1>
+              <h1>Blog 3<span>.</span></h1>
             </div>
   
             <div class="menu">
@@ -81,24 +81,173 @@
     <!-- Project Description-->
     <section class="section Portfolio" id="Portfolio">
         <div class="title">
-          <h1>Git Vs GitHub</h1>
+          <h1>IoT Communication Protocols</h1>
         </div>
   
         <div class="Portfolio-center container">
           <div class="left" data-aos="fade-right" data-aos-duration="2000">
-            <img src="./images/profile1.jpg" alt="" />
+            <!--<img src="./images/blog3.jpg" alt="" />-->
           </div>
 
           <div class="right" data-aos="fade-left" data-aos-duration="2000">
-            <h1>I'm Lyn Nzioka ,<span id="type2"></span></h1>
+            <h1>Introduction to IoT Communication Protocols</h1>
+            <hr>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              placeat inventore rerum tempore cupiditate, amet adipisci aut eius
-              facilis quisquam magni ratione maxime officiis earum blanditiis
-              magnam illum obcaecati vero? Odit ipsa facilis officiis fuga
-              voluptate similique sunt exercitationem voluptatibus, illo et fugit
-              eveniet provident quo atque, nesciunt explicabo tenetur!
+              Well, how we humans can communicate with each other, same like these devices this can communicate with other devices through protocols which are known as IoT protocols. 
+              The protocol is defined as a set of rules and regulation guidelines having how to react for commands from another device. 
+              These protocols are very important while in communication devices. The general-purpose protocols like CDMA, WAP, etc are not suitable for this specific IoT technology.
             </p>
+            
+
+            <h1>Architecture of IoT</h1>
+            <hr>
+            <p>
+              There is no single consensus on architecture for IoT, which is agreed universally. 
+              Different architectures have been proposed by different researchers.
+              <br>
+              <h3>Three and Five Layer Architecture</h3>
+              <p>
+                The most basic architecture is a three-layer architecture
+              It was introduced in the early stages of research in this area.
+               It has three layers, namely, the perception, network, and application layers.<br>
+    
+                <i>1. The perception layer</i> is the physical layer, which has sensors for sensing and gathering information about the environment. 
+                    It senses some physical parameters or identifies other smart objects in the environment.
+                    <br>
+                <i>2. The network layer</i> is responsible for connecting to other smart things, network devices, and servers.
+                    Its features are also used for transmitting and processing sensor data.<br>
+                <i>3.The application layer</i> is responsible for delivering application specific services to the user. 
+                    It defines various applications in which the Internet of Things can be deployed, for example, smart homes, smart cities, and smart health.
+                    <br>
+                    The five layers are perception, transport, processing, application, and business layers    
+              
+            <h1>Iot Communication</h1>
+            <hr>
+              <p>
+                As the Internet of Things is growing very rapidly, there are a large number of heterogeneous smart devices connecting to the Internet. 
+                IoT devices are battery powered, with minimal compute and storage resources. 
+                Because of their constrained nature, there are <u>various communication challenges involved</u>, which are as:<br>
+
+                <b>Addressing and identification: </b>since millions of smart things will be connected to the Internet, 
+                they will have to be identified through a unique address, on the basis of which they communicate with each other. <br>
+                For this, we need a large addressing space, and a unique address for each smart object.<br>
+                <b>Low power communication: </b>communication of data between devices is a power consuming task, specially, wireless communication. 
+                Therefore, we need a solution that facilitates communication with low power consumption.<br>
+                Routing protocols with low memory requirement and efficient communication patterns.<br>
+                High speed and nonlossy communication.<br>
+                Mobility of smart things.<br>
+               </p>
+   
+
+              <h1>IoT protocols: How IoT devices communicate with the network</h1>
+              <hr>
+              <p>
+                IoT devices communicate using IoT protocols. 
+                Internet protocol (IP) is a set of rules that dictates how data gets sent to the internet.
+                IoT protocols ensure that information from one device or sensor gets read and understood by another device, a gateway, a service. 
+                Different IoT protocols have been designed and optimized for different scenarios and usage.
+              </p>
+
+                <h1>What IoT protocol is right for me?</h1>
+                <hr>
+                <p>
+                The type of IoT protocol you’ll need depends on the system architecture layer that the data will travel in. 
+                The Open Systems Interconnection (OSI) model provides a map of the various layers that send and receive data. 
+                Each IoT protocol in the IoT system architecture enables device-to-device, device-to-gateway, gateway-to-data center, or gateway-to-cloud communication, as well as communication between data centers.
+                <br>
+              
+                <br><b>Application layer</b><br>
+                The application layer serves as the interface between the user and the device within a given IoT protocol.<br>
+
+                <i>1. Advanced Message Queuing Protocol (AMQP)</i><br>
+                A software layer that creates interoperability between messaging middleware. 
+                It helps a range of systems and applications work together, creating standardized messaging on an industrial scale.<br>
+
+                <i>2 .Constrained Application Protocol (CoAP)</i><br>
+                A constrained-bandwidth and constrained-network protocol designed for devices with limited capacity to connect in machine-to-machine communication. CoAP is also a document-transfer protocol that runs over User Datagram Protocol (UDP).
+
+                <i>3. Data Distribution Service (DDS)</i><br>
+                A versatile peer-to-peer communication protocol that does everything from running tiny devices to connecting high-performance networks.
+                DDS streamlines deployment, increases reliability, and reduces complexity.<br>
+
+                <i>4. Message Queue Telemetry Transport (MQTT)</i><br>
+                A messaging protocol designed for lightweight machine-to-machine communication and primarily used for low-bandwidth connections to remote locations. 
+                MQTT uses a publisher-subscriber pattern and is ideal for small devices that require efficient bandwidth and battery use.<br>
+                
+          
+                <br><b>Transport layer</b><br>
+                In any IoT protocol, the transport layer enables and safeguards the communication of the data as it travels between layers.<br>
+
+                <i>1. Transmission Control Protocol (TCP)</i><br>
+                The dominant protocol for a majority of internet connectivity. 
+                It offers host-to-host communication, breaking large sets of data into individual packets and resending and reassembling packets as needed.<br>
+
+                <i>2. User Datagram Protocol (UDP)</i><br>
+                A communications protocol that enables process-to-process communication and runs on top of IP. 
+                UDP improves data transfer rates over TCP and best suits applications that require lossless data transmissions.<br>
+
+                <br><b>Network layer</b><br>
+                The network layer of an IoT protocol helps individual devices communicate with the router.<br>
+
+                <i>1. IP</i><br>
+                Many IoT protocols utilize IPv4, while more recent executions use IPv6. 
+                This recent update to IP routes traffic across the internet and identifies and locates devices on the network.<br>
+
+                <i>2. 6LoWPAN</i><br>
+                This IoT protocol works best with low-power devices that have limited processing capabilities.<br>
+
+                <br><b>Data link layer</b><br>
+                The data layer is the part of an IoT protocol that transfers data within the system architecture, identifying and correcting errors found in the physical layer.<br>
+
+                <i>1. IEEE 802.15.4</i><br>
+                A radio standard for low-powered wireless connection. It’s used with Zigbee, 6LoWPAN, and other standards to build wireless embedded networks.<br>
+
+                <i>2. LPWAN</i><br>
+                Low-power wide-area networks (LPWAN) networks enable communication across distances of 500 meters to over 10km in some places. 
+                LoRaWAN is an example of LPWAN that’s optimized for low power consumption.<br>
+
+                <br><b>Physical layer</b><br>
+                The physical layer is the communication channel between devices within a specific environment.<br>
+
+                <i>1. Bluetooth Low Energy (BLE)</i><br>
+                BLE dramatically reduces power consumption and cost and maintains a similar connectivity range as classic Bluetooth. 
+                BLE works natively across mobile operating systems and is fast becoming a favorite for consumer electronics due to its low cost and long battery life.<br>
+
+                <i>2. Ethernet</i><br>
+                This wired connection is a less expensive option that provides fast data connection and low latency.<br>
+
+                <i>3. Long-term evolution (LTE)</i><br>
+                A wireless broadband communication standard for mobile devices and data terminals.
+                LTE increases the capacity and speed of wireless networks and supports multicast and broadcast streams.<br>
+
+                <i>4. Near field communication (NFC)</i><br>
+                A set of communication protocols using electromagnetic fields that allows two devices to communicate from within four centimeters of each other.
+                NFC-enabled devices function as identity keycards and are commonly used for contactless mobile payments, ticketing, and smart cards.<br>
+
+                <i>5. Power Line Communication (PLC)</i><br>
+                A communication technology that enables the sending and receiving of data over existing power cables. 
+                This allows you to both power and control an IoT device through the same cable.<br>
+
+                <i>6. Radio frequency identification (RFID)</i><br>
+                RFID uses electromagnetic fields to track otherwise unpowered electronic tags. 
+                Compatible hardware supplies power and communicate with these tags, reading their information for identification and authentication.<br>
+
+                <i>7. Wi-Fi/802.11</i><br>
+                Wi-Fi/802.11 is a standard in homes and offices. 
+                Although it’s an inexpensive option, it may not suit all scenarios due to its limited range and 24/7 energy consumption.<br>
+
+                <i>8. Z-Wave</i><br>
+                A mesh network using low-energy radio waves to communicate from appliance to appliance.<br>
+
+                <i>9. Zigbee</i><br>
+                An IEEE 802.15.4-based specification for a suite of high-level communication protocols used to create personal area networks with small, low-power digital radios.<br>
+              </p>
+
+
+
+               
+               
+          
           </div>
         </div>
       </section>
