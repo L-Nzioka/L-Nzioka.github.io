@@ -712,7 +712,7 @@ a.btn:active {
 }
 
 footer {
-  background-color: #000;
+  background-color:hsl(41, 96%, 44%);
   padding: 1.6rem 1rem;
   text-align: center;
 }
@@ -722,7 +722,7 @@ footer p {
 }
 
 footer p span {
-  color: #dd9a05;
+  color: hsl(41, 96%, 44%);
 }
 
 .gitcontent{
